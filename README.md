@@ -42,7 +42,9 @@ View your local preview at `http://localhost:3000`.
 
 ## Publishing changes
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+Mintlify's GitHub app deploys `main` to docs.lattica.finance (custom domain; the DNS record is managed in `latticafi/platform`) and lattica.mintlify.app. `ci.yml` runs `pnpm check` (`mint validate` and `mint broken-links`) on pull requests and pushes to `main`; run `pnpm install && pnpm check` locally before pushing.
+
+Mintlify serves PDFs only on Enterprise plans, so the whitepapers live on the landing site (`latticafi/landing-page`, `https://lattica.finance/<file>.pdf`). The `redirects` in `docs.json` keep the old `docs.lattica.finance/<file>.pdf` links working.
 
 ## Need help?
 

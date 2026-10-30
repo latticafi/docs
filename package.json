@@ -1,0 +1,11 @@
+{
+  "name": "docs",
+  "private": true,
+  "packageManager": "pnpm@12.16.1",
+  "scripts": {
+    "check": "mint validate && mint broken-links"
+  },
+  "devDependencies": {
+    "mint": "^4.2.1167"
+  }
+}

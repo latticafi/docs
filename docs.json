@@ -98,5 +98,17 @@
     "socials": {
       "x": "https://x.com/Lattica"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/unlocking-liquidity.pdf",
+      "destination": "https://lattica.finance/unlocking-liquidity.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/intro-lattica.pdf",
+      "destination": "https://lattica.finance/intro-lattica.pdf",
+      "permanent": true
+    }
+  ]
 }
