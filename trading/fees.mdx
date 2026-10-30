@@ -1,0 +1,43 @@
+---
+title: "Fees"
+---
+
+Lattica has four sets of internal fees: a fixed interest rate, an origination fee, a WARHORSE premium, and a liquidation fee. The first three are charged on each leverage trade; liquidation fees are only charged on trades that are liquidated.
+
+Below are the current fee rates. Fee rates are subject to change.
+
+## Interest rates
+
+Interest rates compensate lenders for the time-value of their capital. Lattica’s interest rates are fixed every fifteen-minute term, meaning that the rate you pay that term does not increase over the lifespan of that term.
+
+Interest rates are determined by lender pool utilization. The higher the utilization of the pool, the higher the interest rate.
+
+By default, interest rates are taken from your overall account balance first. If your available balance is not enough to cover the interest rate, it is instead taken from margin. If margin is insufficient, then the position is liquidated.
+
+If you would prefer it taken from margin first instead, you can adjust it accordingly in the settings tab (the gear emoji in the top right corner).
+
+## Origination fee
+
+Lattica charges a flat 0.15% fee on total position size to open each leveraged trade. For example, if you open a trade with $1,000 of margin and 4x leverage, you’ll have a total position size of $4,000, meaning Lattica’s origination fee is $6. Spot trades (trades without leverage) do not have an origination fee.
+
+By default, origination fees are taken from your overall account balance. If you would prefer it taken from margin instead, you can adjust it accordingly in the settings tab (the gear emoji in the top right corner).
+
+## WARHORSE premium
+
+To ensure protocol solvency despite jump risk, Lattica charges a WARHORSE premium on each leveraged trade. The WARHORSE premium is the expected loss of the position over the 15-minute term, calculated using the theory and methodology in [*Unlocking Liquidity*](https://docs.lattica.finance/unlocking-liquidity.pdf), and must be paid to open the trade. Spot trades (trades without leverage) do not have WARHORSE premiums.
+
+The premium rate depends on a multitude of factors about the market at a given time, it is variable. The current rate is always published in the “Premium” bar in the top header of the trade terminal.
+
+If you wish to limit the premium you pay in a given term, select “Cap premium” in the trade panel and enter a value. New trades with a premium that exceeds your entered value will not be opened, and rolled-over trades with a premium that exceeds your entered value will be closed.
+
+Because WARHORSE premiums are meant to cover the expected loss of the position over 15-minutes, rebates are given for trades that are closed early. In essence, you are only charged for the risk you actually used. For example, if your premium for 15 minutes was $15, and you close after 10 minutes, you will be rebated $5.
+
+By default, WARHORSE premiums are taken from your overall account balance. If you would prefer it taken from margin instead, you can adjust it accordingly in the settings tab (the gear emoji in the top right corner).
+
+## Liquidation fee
+
+Liquidation fees are taken from the remaining margin of liquidated trades. The current liquidation fee is 7%. So, if you have $100 in margin after liquidation, Lattica will take $7.
+
+## External fees
+
+In addition to internal fees, traders must pay the standard Polymarket taker fee. These fees are taken by Polymarket directly; Lattica collects none of them. For more information, please refer to Polymarket’s [documentation](https://docs.polymarket.com/trading/fees).

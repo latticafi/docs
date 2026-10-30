@@ -1,20 +1,15 @@
 ---
-title: "Introduction"
-description: "Welcome to your project"
+title: "About Lattica"
 ---
 
-Write a short description of your product here. What it does, who it's for, and what they can accomplish with it.
+## What is Lattica?
 
-<Tip>
-  Ready to make this your own? Start by editing this page. Update your `docs.json` file to customize your site. Then fill out the [Quickstart](/quickstart) page.
-</Tip>
+Lattica is a decentralized protocol that provides credit and leverage to prediction market traders. Currently, Lattica supports Polymarket, with Outcome and other venues soon to follow.
 
-<Card title="Quickstart" icon="rocket" href="/quickstart">
-  This card links to the quickstart page in your project.
-</Card>
-<Card title="Components" icon="puzzle-piece" href="https://mintlify.com/docs/components">
-  Add cards, callouts, steps, tabs, and more to design and structure your pages.
-</Card>
-<Card title="Settings" icon="gear" href="https://mintlify.com/docs/organize/settings">
-  Set your site name, branding, and navigation in the `docs.json` file.
-</Card>
+## Technical Overview
+
+Leverage on prediction markets is a difficult challenge due to jump risk: the tendency of prediction market positions to “jump” between price levels. For instance, a 90c position can be worth 0 in half a second on the arrival of new information. That makes liquidating these positions extremely unreliable.
+
+To defeat jump risk, Lattica built a calibrated risk engine, WARHORSE, which calculates a position's expected loss over the next 15 minutes. The expected loss is then charged to the trader as a premium to be paid before the leveraged position can be opened. A full discussion of the details behind WARHORSE can be found in our Whitepaper, [*Unlocking Liquidity*](https://docs.lattica.finance/unlocking-liquidity.pdf).
+
+Leverage is provided through capital from a liquidity pool, known as the Lattica Liquidity Pool (LLP). The smart contracts for LLP, along with the rest of the protocol, are open source and viewable at (need link here).

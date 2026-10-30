@@ -1,0 +1,26 @@
+---
+title: "Slippage"
+---
+
+Slippage is the difference between a trade's expected price and its actual execution price. For example, you want to buy 5,000 YES shares. The best ask shows **$0.60**, but the order book looks like this:
+
+| Ask price | Size available |
+| :-------- | :------------- |
+| $0.60     | 1,000          |
+| $0.61     | 2,000          |
+| $0.63     | 3,000          |
+
+A market order for 5,000 shares executes as:
+
+- 1,000 @ $0.60 = $600
+- 2,000 @ $0.61 = $1,220
+- 2,000 @ $0.63 = $1,260
+- **Total: $3,080 → average fill $0.616**
+
+The slippage is then:
+
+- Expected cost at the quoted $0.60: $3,000
+- Actual cost: $3,080
+- Slippage: **$80, or about 2.7%** ($0.016 per share)
+
+To protect against slippage, Lattica allows traders to adjust their max slippage tolerance. To do so, click the pencil icon next to “Slippage” in the bottom of the trade panel.
