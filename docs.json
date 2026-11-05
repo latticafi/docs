@@ -61,7 +61,8 @@
           "trading/liquidation",
           "trading/tp-sl",
           "trading/closing-trades",
-          "trading/slippage"
+          "trading/slippage",
+          "untitled-page"
         ]
       },
       "referrals",
@@ -110,5 +111,6 @@
       "destination": "https://lattica.finance/intro-lattica.pdf",
       "permanent": true
     }
-  ]
+  ],
+  "description": "How to leverage trade prediction markets with Lattica."
 }
