@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Lattica",
   "colors": {
-    "primary": "#090909",
+    "primary": "#0D1117",
     "light": "#FFFFFF",
-    "dark": "#090909"
+    "dark": "#FFFFFF"
   },
   "favicon": "/favicon.png",
   "appearance": {
@@ -14,12 +14,10 @@
   },
   "background": {
     "color": {
-      "light": "#FFFFFF",
-      "dark": "#090909"
-    }
-  },
-  "fonts": {
-    "family": "DM Sans"
+      "light": "#F5F5F5",
+      "dark": "#0A0B0D"
+    },
+    "decoration": "grid"
   },
   "styling": {
     "latex": false
@@ -112,5 +110,8 @@
       "permanent": true
     }
   ],
-  "description": "How to leverage trade prediction markets with Lattica."
+  "description": "How to leverage trade prediction markets with Lattica.",
+  "icons": {
+    "library": "lucide"
+  }
 }
