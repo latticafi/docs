@@ -110,5 +110,6 @@
       "destination": "https://lattica.finance/intro-lattica.pdf",
       "permanent": true
     }
-  ]
+  ],
+  "description": "How to leverage trade prediction markets with Lattica."
 }
