@@ -2,10 +2,10 @@
 title: "Order types"
 ---
 
-Lattica currently offers two types of orders: market and price trigger.
+Lattica currently offers three order types: market, market-if-touched, and stop buy. Market orders are the default order type. Other orders can be selected by clicking “Market” in the top right of the trade panel.
 
-Market orders are executed at the current market price, dependent on slippage.
+Market orders are executed at the current mark price, subject to slippage.
 
-Price trigger orders are executed at a trader’s selected price, dependent on slippage. When the price of the market hits the trigger price, the trade is market ordered. For example, if the trigger price is 40 cents, Lattica will not execute the trade until the price of the market is 40 cents.
+Market if touched orders are meant for traders who desire to buy at a price below the current mark price. They execute at a trader’s selected price, subject to slippage. When the mark price hits the trigger price, the trade executes as a market buy. For example, if the mark price is currently 50 cents and the trader sets their trigger price at 40 cents, Lattica will not execute the trade until the mark price is 40 cents. 
 
-Market orders are the default order type. Price trigger orders can be selected by clicking “Market” in the top right of the trade panel.
+Stop buy orders operate similarly to market-if-touched orders, except they are meant for traders who want to buy at a price above the current mark price. For example, if the mark price is currently 50 cents and the trader sets their trigger price at 53 cents, Lattica will not execute the trade until the mark price is 53 cents. 
