@@ -3,23 +3,32 @@
   "theme": "mint",
   "name": "Lattica",
   "colors": {
-    "primary": "#090909",
+    "primary": "#FFFFFF",
     "light": "#FFFFFF",
-    "dark": "#090909"
+    "dark": "#FFFFFF"
   },
   "favicon": "/favicon.png",
   "appearance": {
     "default": "dark",
     "strict": true
   },
-  "background": {
-    "color": {
-      "light": "#FFFFFF",
-      "dark": "#090909"
+  "fonts": {
+    "body": {
+      "family": "IBM Plex Sans Condensed",
+      "weight": 400,
+      "source": "/fonts/IBMPlexSansCondensed-Regular.woff2",
+      "format": "woff2"
+    },
+    "heading": {
+      "family": "Inter",
+      "weight": 400
     }
   },
-  "fonts": {
-    "family": "DM Sans"
+  "background": {
+    "color": {
+      "light": "#F5F5F5",
+      "dark": "#0A0B0D"
+    }
   },
   "styling": {
     "latex": false
@@ -27,13 +36,10 @@
   "navigation": {
     "pages": [
       {
-        "group": "About Lattica",
+        "group": "Overview",
         "root": "index",
         "expanded": true,
-        "pages": [
-          "lattica-101",
-          "team"
-        ]
+        "pages": ["lattica-101", "team"]
       },
       {
         "group": "Onboarding",
@@ -62,13 +68,12 @@
           "trading/tp-sl",
           "trading/closing-trades",
           "trading/slippage",
-          "untitled-page"
+          "trading/hotkeys"
         ]
       },
       "referrals",
       "audits",
-      "bug-bounty",
-      "brand-kit"
+      "bug-bounty"
     ]
   },
   "logo": {
@@ -112,5 +117,8 @@
       "permanent": true
     }
   ],
-  "description": "How to leverage trade prediction markets with Lattica."
+  "description": "Trade with leverage up to 10x, borrow against your positions, and learn about the mechanics that make it all possible. Finally, trade the markets you want, on the venues you know, with the capital you need.",
+  "icons": {
+    "library": "lucide"
+  }
 }
