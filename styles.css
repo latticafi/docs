@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Dark-mode foundations from the Lattica web app's src/styles/tokens.css. */
+:root {
+  --lattica-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --lattica-canvas: #0a0b0d;
+  --lattica-card: #03030c;
+  --lattica-field: #fafafa1a;
+  --lattica-text: #fffffff2;
+  --lattica-secondary: #ffffffb2;
+  --lattica-border: #ffffff14;
+  --lattica-border-hover: #ffffff33;
+  --lattica-hover: #fafafa14;
+  --lattica-selected: #ffffff0f;
+  --lattica-action: #ffffff;
+  --lattica-action-hover: #bac4ce;
+  --lattica-on-action: #020611;
+  --lattica-control-radius: 6px;
+  --lattica-panel-radius: 8px;
+}
+
+#navbar #navbar-transition {
+  background: var(--lattica-canvas);
+  border-color: var(--lattica-border);
+}
+
+#navbar :is(button, [role="button"]),
+#sidebar-content a,
+#pagination a {
+  border-radius: var(--lattica-control-radius);
+}
+
+#navbar #search-bar-entry {
+  min-height: 36px;
+  background: var(--lattica-field);
+  border: 1px solid var(--lattica-border);
+}
+
+#navbar #topbar-cta-button {
+  min-height: 36px;
+  border-radius: var(--lattica-control-radius);
+  background: var(--lattica-action);
+  color: var(--lattica-on-action);
+}
+
+#navbar #topbar-cta-button:hover {
+  background: var(--lattica-action-hover);
+}
+
+#navbar #search-bar-entry:hover,
+#sidebar-content a:hover,
+#pagination a:hover {
+  background: var(--lattica-hover);
+  color: var(--lattica-text);
+}
+
+#sidebar-content a[aria-current="page"] {
+  background: var(--lattica-selected);
+  color: var(--lattica-text);
+}
+
+/* Match the landing page's regular-weight heading hierarchy. */
+#page-title,
+#content-area .prose :is(h1, h2, h3, h4, h5, h6) {
+  font-weight: 400;
+}
+
+#page-title {
+  color: var(--lattica-text);
+  font-size: clamp(32px, 4.2vw, 48px);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+#header .eyebrow {
+  color: var(--lattica-secondary);
+  font: 400 11px/15px var(--lattica-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#content-area #header .prose {
+  max-width: 46ch;
+  color: var(--lattica-secondary);
+  font-size: 18px;
+  line-height: 1.42;
+}
+
+#content-area .prose {
+  color: var(--lattica-secondary);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#content-area .prose :is(h2, h3, h4, strong, th) {
+  color: var(--lattica-text);
+}
+
+#content-area .prose h2 {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--lattica-border);
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+
+#content > h2:first-child {
+  margin-top: 24px;
+}
+
+#content-area .prose h3 {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+}
+
+#content-area .prose a {
+  color: var(--lattica-text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#content-area .prose a:hover {
+  color: var(--lattica-action-hover);
+}
+
+:is(code, pre, kbd, samp) {
+  font-family: var(--lattica-mono);
+  font-variant-numeric: tabular-nums slashed-zero;
+}
+
+#content-area .prose kbd {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--lattica-border-hover);
+  border-radius: 4px;
+  background: var(--lattica-field);
+  color: var(--lattica-text);
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+#content-area .prose :not(pre) > code {
+  background: var(--lattica-hover);
+  color: var(--lattica-text);
+  border-radius: 4px;
+}
+
+#content-area :is(.card, .code-block, .accordion) {
+  background-color: var(--lattica-card);
+  border-color: var(--lattica-border);
+  border-radius: var(--lattica-panel-radius);
+  box-shadow: none;
+}
+
+#content-area .card:hover {
+  border-color: var(--lattica-border-hover);
+}
+
+#content-area .prose :is(thead, tbody tr) {
+  border-color: var(--lattica-border);
+}
+
+#content-area .prose tbody tr:hover {
+  background: #fafafa05;
+}
+
+:where(#navbar, #sidebar-content, #content-area, #table-of-contents, #footer)
+  :is(a, button, input, summary, [tabindex]):focus-visible {
+  outline: 1px solid var(--lattica-action);
+  outline-offset: 2px;
+}
