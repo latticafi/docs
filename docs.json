@@ -29,10 +29,7 @@
         "group": "About Lattica",
         "root": "index",
         "expanded": true,
-        "pages": [
-          "lattica-101",
-          "team"
-        ]
+        "pages": ["lattica-101", "team"]
       },
       {
         "group": "Onboarding",
@@ -61,7 +58,7 @@
           "trading/tp-sl",
           "trading/closing-trades",
           "trading/slippage",
-          "untitled-page"
+          "trading/hotkeys"
         ]
       },
       "referrals",
