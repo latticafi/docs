@@ -3,7 +3,7 @@
   "theme": "mint",
   "name": "Lattica",
   "colors": {
-    "primary": "#0D1117",
+    "primary": "#FFFFFF",
     "light": "#FFFFFF",
     "dark": "#FFFFFF"
   },
@@ -12,13 +12,23 @@
     "default": "dark",
     "strict": true
   },
+  "fonts": {
+    "body": {
+      "family": "IBM Plex Sans Condensed",
+      "weight": 400,
+      "source": "/fonts/IBMPlexSansCondensed-Regular.woff2",
+      "format": "woff2"
+    },
+    "heading": {
+      "family": "Inter",
+      "weight": 400
+    }
+  },
   "background": {
     "color": {
       "light": "#F5F5F5",
       "dark": "#0A0B0D"
-    },
-    "decoration": "grid",
-    "image": "/images/dots.png"
+    }
   },
   "styling": {
     "latex": false
@@ -26,7 +36,7 @@
   "navigation": {
     "pages": [
       {
-        "group": "About Lattica",
+        "group": "Overview",
         "root": "index",
         "expanded": true,
         "pages": ["lattica-101", "team"]
@@ -63,8 +73,7 @@
       },
       "referrals",
       "audits",
-      "bug-bounty",
-      "brand-kit"
+      "bug-bounty"
     ]
   },
   "logo": {

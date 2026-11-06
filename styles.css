@@ -73,8 +73,8 @@
 
 #page-title {
   color: var(--lattica-text);
-  font-size: clamp(32px, 4.2vw, 48px);
-  line-height: 1.04;
+  font-size: clamp(44px, 5.2vw, 84px);
+  line-height: 0.94;
   letter-spacing: -0.04em;
 }
 
@@ -86,10 +86,24 @@
 }
 
 #content-area #header .prose {
+  margin-top: 20px;
   max-width: 46ch;
   color: var(--lattica-secondary);
-  font-size: 18px;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: clamp(16px, 1.25vw, 19px);
+  font-weight: 400;
   line-height: 1.42;
+}
+
+@media (max-height: 360px), (max-width: 420px) and (max-height: 480px) {
+  #page-title {
+    font-size: clamp(32px, 8svh, 44px);
+  }
+
+  #content-area #header .prose {
+    margin-top: 12px;
+    font-size: 14px;
+  }
 }
 
 #content-area .prose {
