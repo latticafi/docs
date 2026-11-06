@@ -17,7 +17,8 @@
       "light": "#F5F5F5",
       "dark": "#0A0B0D"
     },
-    "decoration": "grid"
+    "decoration": "grid",
+    "image": "/images/dots.png"
   },
   "styling": {
     "latex": false
